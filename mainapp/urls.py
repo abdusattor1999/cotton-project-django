@@ -8,5 +8,9 @@ urlpatterns = [
     path('umumiy/', umumiy, name='umumiy'),
     path('cotton-list/', cotton_list, name='cotton_list'),
     path('cotton-list/<int:pk>/', cotton_list, name='cotton_list'),
+    # User
+    path('login/', login_view, name='login'),
+    path('sign-up/', register, name='register'),
+    path('details/', details, name='details'),
     path('', home_page, name='home_page')
 ]

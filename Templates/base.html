@@ -16,11 +16,11 @@
     <div class="home">
         <nav>
             <a href="{% url 'mainapp:home_page' %}" class="logo">Bosh menu</a>
-            <div>
-               <a href="{% url 'mainapp:umumiy' %}" class="btn">Pahta haqida umumiy</a>
-               <a href="{% url 'mainapp:cotton_list' pk=1 %}" class="btn">Dunyoga mashxur navlar</a>
-               <a href="{% url 'mainapp:cotton_list' pk=2 %}" class="btn">Mahalliy navlar</a>
-            </div>
+            {% if request.user.is_authenticated %}
+            <a href="{% url 'mainapp:details' %}" class="btn">Shaxsiy kabinet</a>
+            {% else %}
+            <a href="{% url 'mainapp:login' %}" class="btn">Tizimga kirish</a>
+            {% endif %}
          </nav>
 
          {% block content %}   

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class='row'>
+<form action="." method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Kirish" class="btn">
+</form>
+<a href="{% url 'mainapp:register' %}">Ro'yxatdan o'tish</a>
+</div>
+{% endblock content %}
+
+

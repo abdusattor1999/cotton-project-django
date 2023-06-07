@@ -112,7 +112,17 @@ STATICFILES_DIRS = (
 MEDIA_URL = 'media/'
 MEDIA_ROOT = 'media/'
 
+
+# LOGIN_REDIRECT_URL = 'mainapp:home_page'
+LOGOUT_URL = 'logout'
+LOGOUT_REDIRECT_URL = 'mainapp:home_page'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTHENTICATION_BACKENDS = [
+ 'django.contrib.auth.backends.ModelBackend',
+ 'mainapp.authentication.EmailAuthBackend',
+]

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row">
+    <h1>Shaxsiy kabinet</h1>
+    <h2>Foydalanuvchi : {{ user.username }}</h2>
+    <a href="{% url 'mainapp:create' %}" class="btn" >Yangi paxta navini qo'shish</a>
+    <br><a href="{% url 'logout' %}" class="link">Tizimdan chiqish</a>
+</div>
+{% endblock content %}

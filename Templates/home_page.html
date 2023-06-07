@@ -2,14 +2,18 @@
 {% load static %}
 {% block content %}
 <div class="container">
+   <img src="{% static 'img/paxta2.jpg' %}" class="main_img" alt="Paxta">
    <div class="description">
       <h1>Paxta haqida</h1>
       <p>
-         O'zbekiston Respublikasida paxta sanoatining integratsiyasi, texnologik rivojlanishi, ekinlar yetishtirish, agrar-taminot va sanoatni yanada integratsiyalash, zararli o'rganizmlar bilan kurashish vositalarini rivojlantirish, paxta mahsulotlarining sifatini oshirish, eksportni oshirish va boshqa masalalar  xal etishning asosiy yo'nalishlari belgilangan.
+         Bizning platforma paxta navlari va ular haqida malumotlar joylashgan. Bu platforma orqali paxta haqida to'liq malumot olishingiz mumkin.
       </p>
-      {% comment %} <a href="{% url 'mainapp:create' %}" class="link">Yangi paxta navini qo'shish</a> {% endcomment %}
+      <div>
+         <a href="{% url 'mainapp:umumiy' %}" class="btn">Paxta haqida umumiy</a>
+         <a href="{% url 'mainapp:cotton_list' pk=1 %}" class="btn">Dunyoga mashxur navlar</a>
+         <a href="{% url 'mainapp:cotton_list' pk=2 %}" class="btn">Mahalliy navlar</a>
+      </div>
    </div>
-   <img src="{% static 'img/paxta2.jpg' %}" class="main_img" alt="Paxta">
 </div>
 
 {% endblock content %}
