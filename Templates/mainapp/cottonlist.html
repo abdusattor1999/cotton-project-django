@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<table class='table'>
+    <tr>
+        <th>Pahta navi</th>
+        <th>O'sish davri</th>
+        <th>Tola uzunligi (mm)</th>
+        <th>Hosildorligi(sentner)</th>
+        <th>Tola tipi</th>
+        <th>Nisbiy uzulish kuchi(gk/teks)</th>
+        <th>Pahta navlari guruhi</th>
+        <th>Tola chiqishi(foiz)</th>
+        <th>Tolaning pishiqligi(gk)</th>
+    </tr>
+    {% for paxta in cottons %}
+        <tr>
+        <td>{{paxta.navi}}</td>
+        <td>{{paxta.usish_davri}}</td>
+        <td>{{paxta.uzunlik}}</td>
+        <td>{{paxta.hosildorlik}}</td>
+        <td>{{paxta.tola_tipi}}</td>
+        <td>{{paxta.nisbiy_kuch}}</td>
+        <td>{{paxta.nav_guruxi}}</td>
+        <td>{{paxta.tola_chiqishi}}</td>
+        <td>{{paxta.tola_pishiqligi}}</td>
+    </tr>
+    
+    {% endfor %}
+
+</table>
+{% endblock content %}

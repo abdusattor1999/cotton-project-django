@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            {% block title %}
+            Paxta navlari
+            {% endblock title %}
+        </title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+     </head>
+<body>
+    <div class="home">
+        <nav>
+            <a href="{% url 'mainapp:home_page' %}" class="logo">Bosh menu</a>
+            <div>
+               <a href="{% url 'mainapp:umumiy' %}" class="btn">Pahta haqida umumiy</a>
+               <a href="{% url 'mainapp:cotton_list' pk=1 %}" class="btn">Dunyoga mashxur navlar</a>
+               <a href="{% url 'mainapp:cotton_list' pk=2 %}" class="btn">Mahalliy navlar</a>
+            </div>
+         </nav>
+
+         {% block content %}   
+         {% endblock content %}
+    </div>
+</body>
+</html>

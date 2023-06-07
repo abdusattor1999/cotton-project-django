@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+   <img src="{% static 'img/paxta1.jpg' %}" class="main_img" alt="Paxta">
+   <div class="description">
+      <h1>Pahta haqida</h1>
+      <p>
+         O'zbekiston Respublikasida paxta sanoatining integratsiyasi, texnologik rivojlanishi, ekinlar yetishtirish, agrar-taminot va sanoatni yanada integratsiyalash, zararli o'rganizmlar bilan kurashish vositalarini rivojlantirish, paxta mahsulotlarining sifatini oshirish, eksportni oshirish va boshqa masalalar  xal etishning asosiy yo'nalishlari belgilangan.
+      </p>
+      <a href="{% url 'mainapp:create' %}" class="link">Yangi paxta navini qo'shish</a>
+   </div>
+</div>
+
+{% endblock content %}
