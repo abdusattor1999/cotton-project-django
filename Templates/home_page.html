@@ -2,7 +2,6 @@
 {% load static %}
 {% block content %}
 <div class="container">
-   <img src="{% static 'img/paxta2.jpg' %}" class="main_img" alt="Paxta">
    <div class="description">
       <h1>Paxta haqida</h1>
       <p>
@@ -10,6 +9,7 @@
       </p>
       {% comment %} <a href="{% url 'mainapp:create' %}" class="link">Yangi paxta navini qo'shish</a> {% endcomment %}
    </div>
+   <img src="{% static 'img/paxta2.jpg' %}" class="main_img" alt="Paxta">
 </div>
 
 {% endblock content %}
