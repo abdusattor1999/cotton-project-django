@@ -6,7 +6,7 @@ from django.http import HttpResponse
 # from django.conf.urls import 
 
 def home_page(request):
-    return render(request, 'home_page.html')
+    return render(request, 'index.html')
 
 def umumiy(request):
     return render(request, 'mainapp/umumiy.html')

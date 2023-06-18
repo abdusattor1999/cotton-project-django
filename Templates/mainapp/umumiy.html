@@ -1,20 +1,83 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
 
-<div class="row">
+<div class="container pt-5">
     <h1>Paxtani navlari haqida umumiy ma’lumot</h1>
     
-    <p>Paxta 60 dan ortiq mamlakatlarda uni etishtirish, qayta ishlash va sotish bilan shug'ullanadigan yuzlab million odamlarni ish bilan ta'minlovchi va daromad keltiradigan yirik qishloq xo'jaligi va sanoat ekinidir. Rivojlanayotgan dunyoning ko'pgina mamlakatlari uchun paxta iqtisodiy asosni tashkil qiladi va asosiy valyuta fondi hisoblanadi. </p>
+    <p>O'zbekiston Paxta sanoati mamlakatimizning  iqtisodiy sektorlari ichida katta ahamiyatga ega sohalardan bo'lib, milliy iqtisodiyatning asosiy muassasalaridan birini tashkil etadi. “Paxta navlari va ular haqidagi ma'lumotlar bazasi”ni yaratish esa bu sohani yanada rivojlantirish omillaridan biri bo‘lib xizmat qilishi mumkin. Shuning uchun men “ Bitiruv malakaviy ishi ” (BMI) rahbarim Sobitxon Hoshimov bilan birgalikda bu sohani rivojiga o’z hissamizni qo’shish maqsadida ma’lumotlar bazasini ishlab chiqmoqdamiz. Shu o’rinda takidlash kerakki bu sohani rivojlantirishga hozirgi kunda davlatimiz rahbari tomonidan ham e’tibor qaratilib bir nechta farmon va qarorlar ham qubul qilingan</p>
     <p>Paxta asosiy tabiiy tolali ekin bo'lib, shuningdek, chorvachilik uchun oziq-ovqat yog'i va urug'lik qo'shimcha mahsulotini beradi. Biroq, dunyoda paxta va uni davolash bo'yicha olib borilgan tadqiqotlarning aksariyati uni tolali ekin sifatida e'tirof etish bilan cheklanadi. Paxta hayotimizga tanib bo'lmas darajada ta'sir ko'rsatadi.</p>
     <p>"Paxta" so'zi arabcha "al qatan" so'zidan olingan. Paxta o‘simligi necha yoshda ekanligini hech kim bilmaydi. Dunyoda paxtadan foydalanish bo'yicha birinchi arxeologik kashfiyotlardan biri Pokistonda Mohenjo Daroda joylashgan. Ushbu topilma 5000 yildan ortiqroq yoshdadir. Paxta o'simligi ko'p yillik (ko'p yillar davom etadigan) daraxtdir, lekin psevdo-yillik buta sifatida yetishtirish uchun xonakilashtirilgan. G‘o‘za ko‘p yillik daraxt sifatida yil sayin o‘sishga qodir, o‘sish uchun qulay shart-sharoitlar mavjud bo‘lsa, gul va ko‘sak hosil qiladi. O'sish sharoitlari yaxshi bo'lsa, u gul va ko'saklarni ishlab chiqarishni to'xtatmaydi.</p>
-    
-    <h1>Umuman olganda, butun dunyoda paxtaning to'rtta turi mavjud:</h1>
+    <p>Paxta 60 dan ortiq mamlakatlarda uni etishtirish, qayta ishlash va sotish bilan shug'ullanadigan yuzlab million odamlarni ish bilan ta'minlovchi va daromad keltiradigan yirik qishloq xo'jaligi va sanoat ekinidir. Rivojlanayotgan dunyoning ko'pgina mamlakatlari uchun paxta iqtisodiy asosni tashkil qiladi va asosiy valyuta fondi hisoblanadi. </p>
+    <h2>Dunyoda paxta yetishtiradigan hududlar</h2>
+    <img src="{% static 'img/map1.jpg' %}" style='width:100%;' alt="">
+    <img src="{% static 'img/map2.jpg' %}" style='width:100%;' alt="">
+    <h2>Umuman olganda, dunyoda paxtaning to'rtta turi mavjud:</h2>
     <ol>
         <li>Gossypium hirsutum - tog'li paxta, vatani Markaziy Amerika, Meksika, Karib dengizi</li>
         <li>Gossypium barbadense - tropik Janubiy Amerikada tug'ilgan ekstra uzun shtapel paxta sifatida tanilgan</li>
         <li>Gossypium arboreum - Hindiston va Pokistonda tug'ilgan daraxt paxtasi</li>
         <li>Gossypium herbaceum - Afrikaning janubida va Arabiston yarim orolida joylashgan Levant paxtasi</li>
     </ol>
+    <h3>Gossypium Hirsutum</h3>
+    <p>
+        Dunyo paxta yetishtirishning katta qismi, aslida uning 90 foizi, odatda, tog'li paxta deb ataladigan gossypium hirsutumdan iborat. Tog'li paxta, boshqa turlarga nisbatan, nisbatan qisqa tolalardan iborat. U turli xil iste'mol mahsulotlarida keng qo'llaniladi, bu erda ishlab chiqaruvchilar butunlay tabiiy toladan sifat va tozalikni qidiradi.
+        AQSh tuprog'ida yetishtiriladigan paxtaning 95 foizini tashkil etuvchi tog'lar ayollar gigienasi va chaqaloq parvarishi toifalarida bir qator to'qilmagan mahsulotlarda qo'llaniladi.
+    </p>
+
+    <h3>Gossypium Barbadense</h3>
+    <p>
+        Paxtaning ikkinchi turi bo'lsa-da, gossypium barbadense global paxta mahsulotining atigi sakkiz foizini tashkil qiladi. Qo'shimcha uzun shtapelli paxta, siz dunyodagi eng yaxshi matolarda ishlatiladigan bu navni ko'rasiz. Odatda pima nomi bilan mashhur bo'lib, u juda yumshoq, juda kuchli bo'lib, to'planishga, burishishga yoki xiralashishga qarshi turadi. Pima paxtasining vatani tropik Janubiy Amerika.
+        Keng nusxa ko'chirilgan pima paxta o'zining kiyim-kechak va to'shakda qo'llanilishi uchun juda mashhur.
+    </p>
+
+    <h3>Gossypium arboretium</h3>
+    <p>
+        Global paxta yetishtirishning ikki foizdan kamrog'ini tashkil etuvchi gossypium arboretum odatda daraxt paxta deb nomlanuvchi tur hisoblanadi. Ushbu variant Hindiston va Pokiston uchun mahalliy bo'lib, uni mato muslinini qadrlaydigan jamiyatlarda keng qo'llanilishini ko'rasiz.
+        Oddiy to'quv, muslin - vaqt o'tishi bilan o'z shaklini saqlab, ajoyib nafas olish imkonini beruvchi gazlangan mato. Bu chidamlilik daraxt paxta tolasining yuqori kuchlanishiga bog'liq bo'lishi mumkin. Muslin pishirishda filtr sifatida, shuningdek, tibbiyot olamida doka sifatida ishlatiladi
+    </p>
+    
+    <h3>Gossypium Herbaceum</h3>
+    <p>
+        Levant paxta nomi bilan ham tanilgan gossypium herbaceum Janubiy Afrika va Arabiston yarim orolida joylashgan. Shuningdek, jahon bozorining ikki foizdan kamrog‘ini tashkil etuvchi Levant paxtasi asosan turli matolar tayyorlash uchun iplarga aylantiriladi.
+        Rivojlanayotgan mamlakatlardagi jamiyatlar kiyim-kechakda qo'llanilishidan tashqari, ko'p yillik butadan tug'ilgan bu paxtaga turli xil dorivor maqsadlarda, jumladan, ko'ngil aynish, bosh og'rig'i, isitma, qon ketish va diareyani davolash uchun murojaat qilishadi.
+        Ko'rib turganingizdek, paxta keng turdagi mahsulotlar uchun deyarli cheksiz imkoniyatlarga ega o'simlikdir. Tog'li paxta bilan biz eng katta ishlab chiqarish va qo'llash xilma-xilligini ko'ramiz, bu tur hatto to'qilmagan gigiena va bolalar parvarishi mahsulotlari uchun qayta ishlangan yuqori choyshablar ishlab chiqarishda ham qo'llaniladi. U Amerika Qo‘shma Shtatlarining janubida yoki Afrikaning janubida yetishtirilsin, paxta butun dunyo bo‘ylab hayotimiz sifatini, shaxsiy parvarishimiz, kiyim-kechaklarimiz, choyshablarimiz, pol qoplamalarimiz va boshqa ko‘p narsalarni o‘zgartiradi.
+    </p>
+
+    <h1>Yurtimiz miqyosida yetishtiriladigan paxta navlari</h1>
+    <p>O‘zbekiston paxta yetishtirish bo‘yicha dunyoda yetakchi davlatlardan biri bo‘lib, keng paxta yetishtirish bilan mashhur. Paxta uzoq yillar davomida O‘zbekiston qishloq xo‘jaligi sanoati va iqtisodiyotining muhim qismi bo‘lib kelgan. Mamlakatimizning qulay iqlimi, unumdor tuprog‘i, keng sug‘orish tizimlari paxta yetishtirishdagi muvaffaqiyatlarga xizmat qiladi. O‘zbekistonda g‘o‘zaning bir necha navlari keng miqyosda yetishtiriladi, ularning har biri o‘ziga xos xususiyatlari va turli maqsadlar uchun yaroqliligi bilan ajralib turadi.</p>
+    
+    <h3>O'zbek Mavrakim</h3>
+    <p>O'zbek Mavrakimi O'zbekistonda eng ko'p ekiladigan g'o'za navlaridan biridir. U yuqori hosildorlik salohiyati va mukammal tola sifati bilan mashhur. O‘zbek Mavrakim paxtasining shtapel uzunligi odatda 28-30 millimetr atrofida bo‘lib, uni yuqori sifatli to‘qimachilik va ip-kalava ishlab chiqarish uchun qulay qiladi. G‘o‘zaning ko‘zalari o‘rta va katta bo‘lib, tolasi yaxshi mustahkamlik va noziklikka ega bo‘lib, ichki va xalqaro bozorlarda maqbuldir.</p>
+
+    <h3>Samarqand 16</h3>
+    <p>“Samarqand 16” g‘o‘za navi O‘zbekistonda hosildorligi va tolasi yaxshiligi bilan mashhur. U mamlakatdagi turli ekologik zonalarga moslashishi bilan mashhur. Samarqand 16 paxtasining shtapel uzunligi odatda 27-29 millimetr  atrofida bo'lib, uni turli to'qimachilik mahsulotlariga moslashtiradi. G‘o‘za ko‘zalari o‘rta va katta hajmda, tolasi yaxshi mustahkamlik va noziklikni namoyon qiladi.</p>
+
+    <h3>Farg‘ona 12</h3>
+    <p>“Farg‘ona 12” paxta navi O‘zbekistonning Farg‘ona vodiysi hududida mashhurlikka erishgan. U vodiyning o‘ziga xos iqlim sharoitiga mosligi va yuqori hosildorligi bilan mashhur. Farg‘ona 12 paxtasining shtapel uzunligi odatda 26-28 millimetr atrofida bo‘lib, uni turli to‘qimachilikda qo‘llash uchun qulay qiladi. G‘o‘za ko‘zalari o‘rta va katta hajmda, tolasi yaxshi mustahkamlik va noziklikni namoyon qiladi.</p>
+
+    <h3>Oqdaryo-6</h3>
+    <p>Nav O’zPITI Samarqand filialida duragaylash yo’li bilan yaratilgan. O’suv davri 120-125 kun. Ko’sak yirikligi 6,5-7,0 g. Tolasining uzunligi 33-34 mm, tola chiqishi esa 35-36 foiz. Tola pishiqligi 4,6 gk bo’lib, nisbiy uzilish kuchi 28,3 gk/ teks. 1000 dona chigit massasi 120-125 g. Hosildorligi Samarqand viloyatining turli tuproq-iqlim sharoitida gektaridan 30-45 sentnergacha, tolasi V-tip.</p>
+
+    <h3>Namangan-77</h3>
+    <p>G.S.Zaysev nomidagi g’o’za seleksiyasi va urug’chiligi ilmiy tadqiqot instituti va Qizil Rovot tajriba xo’jaligida yaratilgan. Nav o’rtapishar bo’lib, o’suv davri 110 - 125 kun. Vilt kasalligiga chidamli. Bir ko’sakdagi paxta massasi 5,2 g, tola chiqishi 33,3 foiz, shtapel uzunligi 33,7 mm, tolaning uzilish kuchi 4,7 gk, nisbiy uzilish kuchi 26,2 gk/teks. Tolasi V- tip. Hosildorligi gektariga o’rtacha 44 s. Unumdor bo’z o’tloq va o’tloq–botqoq tuproqlarda gektariga 80-90 ming tupdan, sho’rlangan yerlarda 120-140 ming tupni tashkil etgani ma’qul. Bo’z tuproqlarda o’g’itlarning me’yori N250P175K125 kg/ga. </p>
+
+    <h3>S-6524</h3>
+    <p>G.S.Zaysev nomidagi g’o’za seleksiyasi va urug’chiligi ilmiy tadqiqot institutida duragaylash yo’li bilan yaratilgan, o’rtapishar. Tola uzunligi 35,2 mm, tola pishiqligi 4,5-4,6 gk, nisbiy uzilish kuchi 28,5 gk teks, tola chiqishi 33-34 foiz. Tolasi IV- tipga mansub.</p>
+
+    <h3>S-6530</h3>
+    <p>G.S.Zaysev nomidagi g’o’za seleksiyasi va urug’chiligi ilmiy tadqiqot institutida duragaylash yo’li bilan yaratilgan. O’rtapishar navlar guruhiga kirib, vilt kasalligiga chidamli. O’suv davri 114-124 kunni tashkil etadi. Bir ko’sakdagi paxta massasi 5,4-6,2 g, tola chiqishi 36,8-37,2 foiz, shtapel uzunligi 35,2 mm, pishiqligi 4,5 gk, nisbiy uzilish kuchi 27,1 gk/teks. Hosildorligi gektariga 40-48 s gacha yetadi.</p>
+
+    <h3>Yulduz</h3>
+    <p>O’zbekiston Fanlar Akademiyasining o’simliklar biologiyasi institutida O.Jalilov tomonidan tanlash yo’li bilan yaratilgan. O’suv davri 115-120 kun. Ko’sakdagi paxta massasi 6,5-7,5 g, tola chiqishi 39-40 foiz, tola uzunligi 33-34 mm, tolaning pishiqligi 4,5-4,7 gk, nisbiy uzilish kuchi 26,4-27 gk teks, tolasi V-tipga mansub. </p>
+
+    <h3>Buxoro-6</h3>
+    <p>O’zPITI Buxoro filialida turlararo duragaylash yo’li bilan yaratilgan, o’rtapishar. Ko’sakdagi paxta massasi 7,2 g. Tola chiqishi 36,5 foiz, tola uzunligi 34 mm, tolaning pishiqligi 4,5-4,6 gk, nisbiy uzilish kuchi 28,3 gk/teks. Omad. G.S.Zaysev nomidagi g’o’za seleksiyasi va urug’chiligi ilmiy tadqiqot institutining olimi R.Kim tomonidan yaratilgan. O’suv davri 115- 118 kun. G’o’zaning bo’yi 80-90 sm ga boradi. Ko’saklar tanaga yopishgan holda joylashgan. Ko’sak massasi 5,0-5,5 g. Hosildorlik 40 sentnergacha. Tola chiqishi 35-36 foiz. Tola uzunligi esa 33-34 mm ni tashkil qiladi. Tolasi V-tipga mansub. Mikroneyr ko’rsatgichi 4,5-4,6. Suvga talabi o’rtacha, vilt bilan zararlanishi 5-8 foizni tashkil qiladi. Mineral o’g’itlarga o’rtacha talabchan.</p>
+
+    <h3>Navbahor</h3>
+    <p>Nav O’zbekiston genetika va o’simliklar eksperimental biologiya institutining olimi akademik D.Musayev va P.G.Gubanova tomonidan yaratilgan. O’suv davri 118-120 kun. G’o’za shoxlanmaydi, ko’saklari tanaga yopishgan holda bo’ladi. Gektaridan 40 sentner va undan ko’p hosil olish mumkin. Tola chiqishi 35-36 foiz, tolasining uzunligi esa 33-34 mm ni tashkil qiladi. Tolasi V tipga mansub. Chigiti boshqa navlarni chigitiga nisbatan mayda. Nav qurg’oqchilikka, viltga chidamli, mineral o’g’itlarga talabi o’rtacha. </p>
+
+
 </div>
 
 {% endblock %}
