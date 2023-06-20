@@ -11,6 +11,8 @@ def home_page(request):
 def umumiy(request):
     return render(request, 'mainapp/umumiy.html')
 
+def standart(request):
+    return render(request, 'mainapp/sorts.html')
 
 def cotton_add(request):
     if request.method == 'POST':

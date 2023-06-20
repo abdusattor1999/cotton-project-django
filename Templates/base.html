@@ -40,13 +40,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="{% url 'mainapp:umumiy' %}" class="nav-link smoothScroll">Paxta haqida umumiy</a>
+                        <a href="{% url 'mainapp:cotton_list' pk=2 %}" class="nav-link">Mahalliy navlar</a>
                     </li>
                     <li class="nav-item">
                         <a href="{% url 'mainapp:cotton_list' pk=1 %}" class="nav-link smoothScroll">Mashxur navlar</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{% url 'mainapp:cotton_list' pk=2 %}" class="nav-link">Mahalliy navlar</a>
+                        <a href="{% url 'mainapp:standart' %}" class="nav-link smoothScroll">Tola standartlari</a>
                     </li>
                     <li class="nav-item">
                          {% if request.user.is_authenticated %}

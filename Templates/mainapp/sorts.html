@@ -1,0 +1,397 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br><br>
+<div class="container">
+
+    <h2>Tavsiflash klassifikatsiya usullariga qarab paxta tolasini sifat ko’rsatkichlarining nomlanishi</h2>
+    <br>
+    <table class="table table-bordered">
+    <tr>
+        <td>Ko‘rsatkichlar</td>
+        <td>HVI usuli</td>
+        <td>Klasser usuli</td>
+        <td>Maxsus usullar</td>
+    </tr>
+    <tr>
+        <td>Tipi</td>
+        <td>+</td>
+        <td>+</td>
+        <td>+</td>
+    </tr>
+    <tr>
+        <td>Navi</td>
+        <td>+</td>
+        <td>+</td>
+        <td>+</td>
+    </tr>
+    <tr>
+        <td>Sinfi</td>
+        <td>+</td>
+        <td>+</td>
+        <td>+</td>
+    </tr>
+    <tr>
+        <td>Makroneyr ko‘rsatkichi(Micronaire)</td>
+        <td>+</td>
+        <td>+</td>
+        <td>+</td>
+    </tr>
+    <tr>
+        <td>Yuqori o‘rtacha uzunlik (mm) </td>
+        <td>+</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Shtapel uzunligi (staple) 1/32 dyuymda</td>
+        <td>+</td>
+        <td>+</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Nur qaytarish koeffitsiyenti %</td>
+        <td>(+)</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Sarg‘ishlik darajasi (+b)</td>
+        <td>(+)</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Solishtirma uzilish kuchi (Strength) ge/teks</td>
+        <td>(+)</td>
+        <td></td>
+        <td>+</td>
+    </tr>
+    <tr>
+        <td>Tresh kod (Trashn code) %</td>
+        <td>(+)</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Iflos aralshmalar soni (Trash count)</td>
+        <td>(+)</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Uzilishdagi uzayish %</td>
+        <td>(+)</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Uzunlik bo‘yicha birxillik indeksi %</td>
+        <td>(+)</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Kalta tolalar indeksi (Short fiber imdex)</td>
+        <td>(+)</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Shtapel massa uzunligi (mm)</td>
+        <td></td>
+        <td></td>
+        <td>+</td>
+    </tr>
+    <tr>
+        <td>Chiziqli zichlik (m/teks)</td>
+        <td></td>
+        <td></td>
+        <td>+</td>
+    </tr>
+    <tr>
+        <td>Pishib yetilish  koeffitsiyenti</td>
+        <td></td>
+        <td></td>
+        <td>+</td>
+    </tr>
+    <tr>
+        <td>Nuqsonlar va iflos aralshmalarni massaviy ulushi %</td>
+        <td></td>
+        <td></td>
+        <td>+</td>
+    </tr>
+    <tr>
+        <td>Namlikning massaviy nisbati %</td>
+        <td></td>
+        <td></td>
+        <td>+</td>
+    </tr>
+</table>
+
+
+<br><br>
+<h2>Paxta tolasining tiplari</h2>
+<br>
+<table class="table table-bordered">
+    <tr>
+        <td rowspan="2">Sanoat navi</td>
+        <td colspan="2">Tolaning tiplari bo'yicha rangi va tashqi ko'rinishi</td>
+    </tr>
+    <tr>
+        <td>1a, 1b, 1,2,3</td>
+        <td>4-7</td>
+    </tr>
+    <tr>
+        <td>І</td>
+        <td>Oq yoki tabiy nimrang oq tuslash yoxud paxtaning seleksion navi yoki o‘stiraladigan hududga bog‘liq bo‘lgan nimrang. Ipaksimon, yaltiroq va zich ko‘rinishda</td>
+        <td>Oq yoki tabiy nimrang oq tusli</td>
+    </tr>
+    <tr>
+        <td>ІІ</td>
+        <td>Xira oq rangdan to nimrang tusgacha va katta bo‘lmagan sariq dog‘li, yaltiroqligi, ipaksimonligi va qalinligi birinchi tolga nisbatan pastroq.</td>
+        <td>Xira oq rangdan och sariq nimrangacha</td>
+    </tr>
+    <tr>
+        <td>ІІІ</td>
+        <td>Xira oq rangdan to nimrang tusgacha yoki sariq dog‘lari bo‘lgan notekis sarg‘ish rangacha.Kulrangroq tusli deyarli yaltiramyadi.</td>
+        <td>Xira oq rangdan sariq dog‘li nimrang, sarg‘ish rangacha, nursiz kulrangroq tusli</td>
+    </tr>
+    <tr>
+        <td>ІV</td>
+        <td>Sariq yoki kularang aralshgan notekis sarg‘ish tusli qo‘ng‘ir dog‘li. Yaltiroqligi yo‘q.</td>
+        <td>Xira oq rang va nimrangdan kularang tusli sarg‘ish nimrangacha va qo‘ng‘ir dog‘li.</td>
+    </tr>
+    <tr>
+        <td>V</td>
+        <td>Qo‘ng‘ir rangdan to dog‘li sariq rangacha. Kulrang</td>
+        <td>Xira oq yoki xira nimrangdan qo‘ng‘ir dog‘li yaqqol sariqgacha.Kulrang.</td>
+    </tr>
+</table>
+
+<br><br>
+<h3>O‘rta tolali paxta navlarining Universal standartlar bo‘yicha tasnifi</h3>
+<br>
+<table class="table table-bordered">
+    <tr>
+        <td>Navi</td>
+        <td>Belgisi</td>
+        <td>Kodi</td>
+        <td>Standatlarning mavjudligi</td>
+    </tr>
+    <tr>
+        <td>White (oq)</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Good Middling</td>
+        <td>GM</td>
+        <td>11</td>
+        <td>+</td>
+    </tr>
+    <tr>
+        <td>Strickt Middling</td>
+        <td>SM</td>
+        <td>21</td>
+        <td>+</td>
+    </tr>
+    <tr>
+        <td>Middling</td>
+        <td>Mid</td>
+        <td>31</td>
+        <td>+</td>
+    </tr>
+    <tr>
+        <td>Strickt Low Middling</td>
+        <td>SLM</td>
+        <td>41</td>
+        <td>+</td>
+    </tr>
+    <tr>
+        <td>Low Middling</td>
+        <td>LM</td>
+        <td>51</td>
+        <td>+</td>
+    </tr>    
+    <tr>
+        <td>Strickt Good Ordinary</td>
+        <td>SGO</td>
+        <td>61</td>
+        <td>+</td>
+    </tr>
+    <tr>
+        <td>Good Ordinary</td>
+        <td>GO</td>
+        <td>71</td>
+        <td>+</td>
+    </tr>
+    <tr>
+        <td>Below Grades</td>
+        <td>BG</td>
+        <td>81</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>Light Spotted (kuchsiz dog‘li)</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Good Middling</td>
+        <td>GM Lt Sp</td>
+        <td>12</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Strickt Middling</td>
+        <td>SM Lt Sp</td>
+        <td>22</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Middling</td>
+        <td>M Lt Sp</td>
+        <td>32</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Strickt Low Middling</td>
+        <td>SLM Lt Sp</td>
+        <td>42</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Low Middling</td>
+        <td>LM Lt Sp</td>
+        <td>52</td>
+        <td></td>
+    </tr>    
+    <tr>
+        <td>Strickt Good Ordinary</td>
+        <td>SGO Lt Sp</td>
+        <td>62</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Good Ordinary</td>
+        <td>GO Lt Sp</td>
+        <td>72</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Below Grades</td>
+        <td>BG Lt Sp</td>
+        <td>82</td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td>Spotted (dog‘li)</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Good Middling</td>
+        <td>GM Sp</td>
+        <td>13</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Strickt Middling</td>
+        <td>SM Sp</td>
+        <td>23</td>
+        <td>+</td>
+    </tr>
+    <tr>
+        <td>Middling</td>
+        <td>M Sp</td>
+        <td>33</td>
+        <td>+</td>
+    </tr>
+    <tr>
+        <td>Strickt Low Middling</td>
+        <td>SLM Sp</td>
+        <td>43</td>
+        <td>+</td>
+    </tr>
+    <tr>
+        <td>Low Middling</td>
+        <td>LM Sp</td>
+        <td>53</td>
+        <td>+</td>
+    </tr>    
+    <tr>
+        <td>Strickt Good Ordinary</td>
+        <td>SGO Sp</td>
+        <td>63</td>
+        <td>+</td>
+    </tr>
+    <tr>
+        <td>Below Grades</td>
+        <td>BG Sp</td>
+        <td>83</td>
+        <td> </td>
+    </tr>    
+    
+
+    
+    <tr>
+        <td>Tinger(sarg'ish)</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Strickt Middling</td>
+        <td>SM Tg</td>
+        <td>24</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Middling</td>
+        <td>Mid Tg</td>
+        <td>34</td>
+        <td>+</td>
+    </tr>
+    <tr>
+        <td>Strickt Low Middling</td>
+        <td>SLM Tg</td>
+        <td>44</td>
+        <td>+</td>
+    </tr>
+    <tr>
+        <td>Low Middling</td>
+        <td>LM Tg</td>
+        <td>54</td>
+        <td>+</td>
+    </tr>    
+    <tr>
+        <td>Below Grades</td>
+        <td>BG Tg</td>
+        <td>84</td>
+        <td> </td>
+        <tr>
+            <td>Yellow Stained (sariq)</td>
+            <td></td>
+            <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Strickt Middling</td>
+        <td>SM YS</td>
+        <td>25</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Middling</td>
+        <td>Mid YS</td>
+        <td>35</td>
+        <td></td>
+    </tr>
+</table>
+
+</div>
+{% endblock content %}
