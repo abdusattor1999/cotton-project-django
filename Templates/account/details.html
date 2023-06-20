@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="container">
+<div class="container pt-5">
     <h1>Shaxsiy kabinet</h1>
     <h2>Foydalanuvchi : {{ user.username }}</h2>
     <a href="{% url 'mainapp:create' %}" class="btn custom-btn" >Yangi paxta navini qo'shish</a>
